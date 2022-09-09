@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#5B87F4" />
+  <meta name="msapplication-TileColor" content="white" />
+  <meta name="msapplication-TileImage" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHN5XKMWstenQ_lPCi0YP6PdE2E7utjAxWw&usqp=CAU" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Dukan Rate" />
+  <meta name="application-name" content="Dukan Rate" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHN5XKMWstenQ_lPCi0YP6PdE2E7utjAxWw&usqp=CAU">
+  <title>Products price - Dukan Rate </title>
+</head>
+
+<body>
+  
+  
+  <header class="mx-auto">
+    
+    <div class="w-full flex flex-wrap py-3 bg-gray-200 px-5 rounded-b-lg mx-auto my-auto">
+      <div class="w-1/5 my-auto">
+        <img class="w-20 rounded-full text-left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHN5XKMWstenQ_lPCi0YP6PdE2E7utjAxWw&usqp=CAU" alt="">
+      </div>
+      <div class="w-4/5 my-auto">
+        <h1 class="text-xl font-medium text-indigo-600 ml-5">Dukan Rate - Prices of products</h1>
+        <p class="ml-5 text-3xl text-red-500 font-light" id="clock" onload="currentTime()"></p>
+      </div>
+    </div>
+    
+  </header>
+
+
+<section class="">
+  <div class="w-full mx-auto my-auto px-5 py-10 mt-5">
+    <input onkeyup="myFunction()" id="myInput" class="w-4/5 bg-gray-100 py-2 px-3 outline-none text-lg text-left border-2 border-indigo-500 rounded-l" type="text" placeholder="Search products name...">
+    <button class="border-2 border-indigo-500 search-btn w-1/5 bg-indigo-500 py-2 outline-none text-center float-right text-lg rounded-r text-white" disabled>Search</button>
+  </div>
+</section>
+
+
+<div class="pricing-table w-full mx-auto text-left px-5 text-lg">
+
+<!-- table will appear in this div. -->
+
+
+</div>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+<script type="module">
+    const data = [
+  
+  
+  
+  {
+    id: 1,
+    getproname: "मून्ग दाल",
+    getproweight: "1",
+    getprorupees: "300"
+  },
+  {
+    id: 2,
+    getproname: "अरहर दाल",
+    getproweight: "1",
+    getprorupees: "120"
+  },
+  {
+    id: 3,
+    getproname: "मसूर दाल",
+    getproweight: "1",
+    getprorupees: "120"
+  },
+  {
+    id: 4,
+    getproname: "पोहा",
+    getproweight: "1",
+    getprorupees: "20"
+  },
+    {
+    id: 5,
+    getproname: "सरसों तेल",
+    getproweight: "11111111",
+    getprorupees: "120111111"
+  },
+  {
+    id: 6,
+    getproname: "बतासे",
+    getproweight: "111111",
+    getprorupees: "1201111"
+  },
+    {
+    id: 7,
+    getproname: "गुड़",
+    getproweight: "11111111",
+    getprorupees: "120111111"
+  },
+  {
+    id: 8,
+    getproname: "शक्कर",
+    getproweight: "111111",
+    getprorupees: "1201111"
+  },
+    {
+    id: 9,
+    getproname: "चावल",
+    getproweight: "11111111",
+    getprorupees: "120111111"
+  },
+  {
+    id: 10,
+    getproname: "मैदा",
+    getproweight: "111111",
+    getprorupees: "1201111"
+  },
+    {
+    id: 11,
+    getproname: "रवा",
+    getproweight: "11111111",
+    getprorupees: "120111111"
+  },
+  {
+    id: 12,
+    getproname: "Pohe",
+    getproweight: "111111",
+    getprorupees: "1201111"
+  },
+    {
+    id: 13,
+    getproname: "बेसन",
+    getproweight: "11111111",
+    getprorupees: "120111111"
+  },
+  {
+    id: 14,
+    getproname: "Pohe",
+    getproweight: "111111",
+    getprorupees: "1201111"
+  },  {
+    id: 15,
+    getproname: "Pohe",
+    getproweight: "11111111",
+    getprorupees: "120111111"
+  },
+  {
+    id: 16,
+    getproname: "Pohe",
+    getproweight: "111111",
+    getprorupees: "1201111"
+  },  {
+    id: 17,
+    getproname: "Pohe",
+    getproweight: "11111111",
+    getprorupees: "120111111"
+  },
+  {
+    id: 18,
+    getproname: "Pohe",
+    getproweight: "111111",
+    getprorupees: "1201111"
+  },
+    {
+    id: 19,
+    getproname: "Pohe",
+    getproweight: "11111111",
+    getprorupees: "120111111"
+  },
+  {
+    id: 20,
+    getproname: "Pohe",
+    getproweight: "111111",
+    getprorupees: "1201111"
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ];
+ data;
+
+
+   const myDataTable = document.createElement("table");
+   const tabelRowsHeader = document.createElement("tr");
+   const proNameLabel = document.createElement("th");
+   const proWeightLabel = document.createElement("th");
+   const proPriceLabel = document.createElement("th");
+   
+   const tableDatalabel = document.querySelector(".pricing-table");
+   tableDatalabel.append(myDataTable);
+   myDataTable.append(tabelRowsHeader);
+   tabelRowsHeader.append(proNameLabel);
+   tabelRowsHeader.append(proWeightLabel);
+   tabelRowsHeader.append(proPriceLabel);
+   
+   myDataTable.setAttribute("class", "w-full mx-auto");
+   myDataTable.setAttribute("id", "myTable");
+   tabelRowsHeader.setAttribute("class", "border-2 w-full mx-auto border-gray-800 text-red-500");
+   proNameLabel.setAttribute("class", "border-2 border-gray-800 pl-2");
+   proWeightLabel.setAttribute("class", "border-2 border-gray-800 pl-2");
+   proPriceLabel.setAttribute("class", "border-2 border-gray-800 pl-2");
+   
+   proNameLabel.innerHTML = "Product Name";
+   proWeightLabel.innerHTML = "Product Weight";
+   proPriceLabel.innerHTML = "Product Rupees";
+ 
+ 
+const pricingtables = productsInfo => {
+  // Create elements needed to build a card
+  
+  const tabelRowsData = document.createElement("tr");
+  const proName = document.createElement("td");
+  const proWeight = document.createElement("td");
+  const proPrice = document.createElement("td");
+  
+  // Append newly created elements into the DOM
+  const tableData = document.querySelector(".pricing-table");
+  
+  myDataTable.append(tabelRowsData);
+  tabelRowsData.append(proName);
+  tabelRowsData.append(proWeight);
+  tabelRowsData.append(proPrice);
+  
+  tabelRowsData.setAttribute("class", "border-2 border-gray-600");
+  proName.setAttribute("class", "border border-gray-600 px-2");
+  proWeight.setAttribute("class", "border border-gray-600 px-2");
+  proPrice.setAttribute("class", "border border-gray-600 px-2");
+  
+  proName.innerHTML = productsInfo.getproname;
+  proWeight.innerHTML = productsInfo.getproweight;
+  proPrice.innerHTML = productsInfo.getprorupees;
+  
+};
+data.forEach(productsInfo => pricingtables(productsInfo));
+
+
+
+
+
+
+
+    
+</script>
+
+<script>
+function currentTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if(hh == 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+currentTime();
+</script>
+</body>
+</html>
