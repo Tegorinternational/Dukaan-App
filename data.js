@@ -5,80 +5,80 @@
   {
     id: 1,
     getproname: "मून्ग दाल",
-    getproweight: "1",
-    getprorupees: "300"
+    getproweight: "1 kg",
+    getprorupees: "120"
   },
   {
     id: 2,
     getproname: "अरहर दाल",
-    getproweight: "1",
+    getproweight: "1 kg",
     getprorupees: "120"
   },
   {
     id: 3,
     getproname: "मसूर दाल",
-    getproweight: "1",
+    getproweight: "1 kg",
     getprorupees: "120"
   },
   {
     id: 4,
     getproname: "पोहा",
-    getproweight: "1",
-    getprorupees: "20"
+    getproweight: "1 kg",
+    getprorupees: "45"
   },
     {
     id: 5,
     getproname: "सरसों तेल",
-    getproweight: "11111111",
-    getprorupees: "120111111"
+    getproweight: "1 kg",
+    getprorupees: "170"
   },
   {
     id: 6,
     getproname: "बतासे",
-    getproweight: "111111",
-    getprorupees: "1201111"
+    getproweight: "1 kg",
+    getprorupees: "80"
   },
     {
     id: 7,
     getproname: "गुड़",
-    getproweight: "11111111",
-    getprorupees: "120111111"
+    getproweight: "1 kg",
+    getprorupees: "50"
   },
   {
     id: 8,
     getproname: "शक्कर",
-    getproweight: "111111",
-    getprorupees: "1201111"
+    getproweight: "1 kg",
+    getprorupees: "42"
   },
     {
     id: 9,
     getproname: "चावल",
-    getproweight: "11111111",
-    getprorupees: "120111111"
+    getproweight: "1 kg",
+    getprorupees: "40"
   },
   {
     id: 10,
     getproname: "मैदा",
-    getproweight: "111111",
-    getprorupees: "1201111"
+    getproweight: "1 kg",
+    getprorupees: "40"
   },
     {
     id: 11,
     getproname: "रवा",
-    getproweight: "11111111",
-    getprorupees: "120111111"
+    getproweight: "1 kg",
+    getprorupees: "40"
   },
   {
     id: 12,
-    getproname: "Pohe",
-    getproweight: "111111",
-    getprorupees: "1201111"
+    getproname: "बतासे",
+    getproweight: "500 gm",
+    getprorupees: "50"
   },
     {
     id: 13,
     getproname: "बेसन",
-    getproweight: "11111111",
-    getprorupees: "120111111"
+    getproweight: "1 kg",
+    getprorupees: "100"
   },
   {
     id: 14,
