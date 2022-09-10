@@ -21,7 +21,7 @@ import data from "/Dukaan-App/data.js";
    
    proNameLabel.innerHTML = "Product Name";
    proWeightLabel.innerHTML = "Product Weight";
-   proPriceLabel.innerHTML = "Product Rupees";
+   proPriceLabel.innerHTML = "Product MRP ( ₹ )";
  
  
 const pricingtables = productsInfo => {
