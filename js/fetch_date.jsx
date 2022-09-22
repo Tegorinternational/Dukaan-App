@@ -8,7 +8,7 @@ class LatestCommitComponent extends React.Component {
   }
   componentDidMount() {
     fetch(
-      "https://api.github.com/repos/tegorinternational/GitHub.io/branches/master"
+      "https://api.github.com/repos/tegorinternational/Dukaan-App/branches/master"
     )
       .then(response => {
         response.json().then(json => {
